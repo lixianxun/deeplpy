@@ -3,6 +3,7 @@
 
 import numpy as np
 
+# 1 only if both 1
 def AND(x1, x2):
   x = np.array([x1, x2])
   w = np.array([0.5, 0.5])
@@ -19,6 +20,7 @@ print(AND(1,1))
 print(AND(1,0))
 print(AND(0,1))
 
+# 1 when both not 1
 def NAND(x1, x2):
   x = np.array([x1, x2])
   w = np.array([-0.5, -0.5])
@@ -35,6 +37,8 @@ print(NAND(1,1))
 print(NAND(1,0))
 print(NAND(0,1))
 
+
+# 1 when either 1
 def OR(x1, x2):
   x = np.array([x1, x2])
   w = np.array([0.5, 0.5])
